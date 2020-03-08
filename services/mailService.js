@@ -13,7 +13,7 @@ const sendSecondary = providers[secondary];
 exports.sendMail = async (msg) => {
     try {
         const primaryResponse = await sendPrimary(msg);
-        if (primaryResponse.status > 200 && primaryResponse.status < 299) {
+        if (primaryResponse.status >= 200 && primaryResponse.status < 299) {
             return primaryResponse;
         }
         const secondaryResponse = await sendSecondary(msg);

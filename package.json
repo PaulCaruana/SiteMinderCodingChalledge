@@ -1,27 +1,24 @@
 {
-  "name": "hello-fastify",
+  "name": "site-minder-coding-challedge",
   "version": "0.0.1",
-  "description": "A Fastify \"hello world\" template, with tests",
+  "description": "Create a service that accepts the necessary information and sends emails",
   "main": "index.js",
   "scripts": {
     "test": "tap test/*test.js",
-    "start": "node -r dotenv/config index -v | pino-colada",
+    "start": "node index -v | pino-colada",
+    "dev": "node -r dotenv/config index -v | pino-colada",
     "watch": "nodemon -r dotenv/config index | pino-colada"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mcollina/hello-fastify.git"
+    "url": "https://github.com/PaulCaruana/SiteMinderCodingChalledge.git"
   },
   "keywords": [
-    "fastify",
-    "scaffold"
+    "SiteMinder",
+    "Email"
   ],
-  "author": "Matteo Collina <hello@matteocollina.com>",
+  "author": "Paul Caruana <caruanapaul023@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mcollina/hello-fastify/issues"
-  },
-  "homepage": "https://github.com/mcollina/hello-fastify#readme",
   "devDependencies": {
     "dotenv": "^8.2.0",
     "eslint": "^6.5.1",
