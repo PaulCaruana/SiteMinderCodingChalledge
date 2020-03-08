@@ -57,7 +57,7 @@ npm run test
 ## Usage (from REST Client)
 
 - Use a REST client like POSTMAN or Bangarang Chrome plugin
-- Request: POST /api/send/email
+- Request: POST https://site-minder-mail-service.herokuapp.com/api/send/email
 - Body (example):
 ```
 {
@@ -106,5 +106,5 @@ This will return the following payload:
 **Paul Caruana** 
 
 ## Demo
-TBA
+https://site-minder-mail-service.herokuapp.com/api/send/email
 
