@@ -8,10 +8,11 @@ fails to send the request, the secondary provider will send the request.
  
 ## Todo
 
-- Fix vunerabilities of specified versions as specified in my GITHUB after I committed the code. 
-When taking a brief look and changing the fastify version this caused the tests to fail with a strange error.
-- Add more tests to check validation and fail over
-- Add better eslinting probably Airbnb
+- Fix vunerabilities of specified versions as specified in my GITHUB repository after I committed the code. 
+When taking a brief look and changing the fastify version this caused the tests to fail with a strange error. 
+Therefore, giving the time to fix this I will put it in the todo bucket.
+- Add more tests to check further validation and fail over
+- Add better eslinting, probably Airbnb
 - Add the ability to overide the 'from' email field
 - Provide better failover eg. retry and reporting that an issue exists. 
 - Add extra validation outside of Fastify schema
@@ -56,7 +57,7 @@ npm run test
 
 ## Usage (from REST Client)
 
-- Use a REST client like POSTMAN or Bangarang Chrome plugin
+- Use a REST client like POSTMAN or Boomarang Chrome plugin
 - Request: POST https://site-minder-mail-service.herokuapp.com/api/send/email
 - Body (example):
 ```
@@ -76,7 +77,7 @@ npm run test
 }
 ```
 
-To test the failover, use the following payload where the user "paul.q.borg@gmail.com" is not permitted on MailGun as it has not been setup:
+To test the failover, use the following payload where the user "paul.q.borg@gmail.com" is not permitted on MailGun as it has not been whitelisted:
 ```
 {
   "subject" : "subject",
