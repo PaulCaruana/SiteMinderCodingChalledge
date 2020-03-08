@@ -9,6 +9,10 @@
     "dev": "node -r dotenv/config index -v | pino-colada",
     "watch": "nodemon -r dotenv/config index | pino-colada"
   },
+  "engines": {
+    "npm": "6.13.4",
+    "node": "13.5.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/PaulCaruana/SiteMinderCodingChalledge.git"
