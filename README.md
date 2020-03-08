@@ -39,7 +39,7 @@ SENDGRID_API_KEY=<apiKey>
 
 ## Run application
 
-Please ensure that MAILGUN_API_KEY=<apiKey> and SENDGRID_API_KEY=<apiKey> are set up environment variable on server before running
+Please ensure that MAILGUN_API_KEY=apiKey and SENDGRID_API_KEY=apiKey are set up as environment variables on server before running
 
 ```
 npm start (when deployed to server)
