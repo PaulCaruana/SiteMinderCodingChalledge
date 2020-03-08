@@ -27,7 +27,6 @@ exports.sendGridMail = async ({ to, cc, bcc, subject, body = "" }) => {
         if (bcc) {
             payload.personalizations[0].bcc = bcc
         }
-        console.log(JSON.stringify(payload.personalizations))
         return payload
     }
 
@@ -54,7 +53,6 @@ exports.sendGridMail = async ({ to, cc, bcc, subject, body = "" }) => {
         const status = (error && error.statusCode)? error.statusCode : 500;
         const message = (error && error.message)?
             error.message : statusMessage.getMessage(status, "HTTP/1.1")
-        console.error(message)
         return { provider, message, status }
     }
 }

@@ -30,7 +30,6 @@ test("Given when testing for simple request then I expect a successful result", 
         method: "GET",
         url: "/api"
     }, function (response) {
-        console.log(response.payload)
         t.equal(response.statusCode, 200)
         t.deepEqual(JSON.parse(response.payload), { hello: "world" })
         t.end()
@@ -45,7 +44,6 @@ test("Given sending an email when no 'to' field is provided then I expected an e
             "subject" : "subject"
         }
     }, function (response) {
-        console.log(response)
         t.equal(response.statusCode, 400)
         t.equal(response.payload.indexOf("should have required property 'to'") > -1, true)
         t.end()

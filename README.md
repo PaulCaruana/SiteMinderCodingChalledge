@@ -1,4 +1,4 @@
-# Failover mail service
+# SiteMinder Failover mail service
 
 ## Description
 
