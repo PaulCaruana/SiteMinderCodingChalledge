@@ -1,0 +1,43 @@
+{
+  "name": "hello-fastify",
+  "version": "0.0.1",
+  "description": "A Fastify \"hello world\" template, with tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*test.js",
+    "start": "node -r dotenv/config index -v | pino-colada",
+    "watch": "nodemon -r dotenv/config index | pino-colada"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcollina/hello-fastify.git"
+  },
+  "keywords": [
+    "fastify",
+    "scaffold"
+  ],
+  "author": "Matteo Collina <hello@matteocollina.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcollina/hello-fastify/issues"
+  },
+  "homepage": "https://github.com/mcollina/hello-fastify#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^6.5.1",
+    "eslint-config-google": "^0.14.0",
+    "pre-commit": "^1.2.2",
+    "request": "^2.83.0",
+    "tap": "^11.0.0"
+  },
+  "dependencies": {
+    "btoa": "^1.2.1",
+    "fastify": "^0.35.3",
+    "fastify-autoload": "^1.2.2",
+    "fastify-plugin": "^1.6.1",
+    "http-status-code": "^2.1.0",
+    "minimist": "^1.2.0",
+    "pino-colada": "^1.4.2",
+    "request-promise-native": "^1.0.8"
+  }
+}
