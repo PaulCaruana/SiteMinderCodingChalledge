@@ -37,7 +37,7 @@
     "fastify-autoload": "^1.2.2",
     "fastify-plugin": "^1.6.1",
     "http-status-code": "^2.1.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "pino-colada": "^1.4.2",
     "request-promise-native": "^1.0.8"
   }
