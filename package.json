@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "btoa": "^1.2.1",
-    "fastify": "^0.35.3",
+    "fastify": "^2.15.1",
     "fastify-autoload": "^1.2.2",
     "fastify-plugin": "^1.6.1",
     "http-status-code": "^2.1.0",
